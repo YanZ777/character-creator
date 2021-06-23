@@ -3,6 +3,20 @@
   padding-bottom: 64px;
 }
 
+/* 
+Have the perspective bar render first so that the other elements can be 
+lavered on top.
+*/
+.perspectiveBar {
+   background-color: hsl(195deg, 20%, 86%);
+   min-height: 40%;
+   position: fixed;
+   bottom: 0px;
+   right: 0px;
+   width: 100%;
+   isolation: isolate;
+}
+
 .maxWidthWrapper {
    width: 100%;
    isolation: isolate;
@@ -37,3 +51,4 @@
 .controlColumn {
    width: 50%;
 }
+
